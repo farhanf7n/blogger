@@ -1,16 +1,195 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navbar') %>
 
+<style>
+    .single__post {
+        margin-top: 20px;
+        display: flex;
+        border: 1px solid white;
+        padding: 32px;
+    }
 
+    .post__img, .post__desc {
+        width: 50%;
+    }
+
+    .post__img img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .post__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .post__desc h1, p {
+        color: white;
+    }
+
+    .post__desc p {
+        font-size: 19px;
+    }
+
+    .post__meta {
+        display: flex;
+        gap: 1rem;
+    }
+    .post__meta span {
+        color: white;
+    }
+    
+    .post__btn {
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+    }
+
+    .post__btn a {
+        color: white;
+        background-color: #dc2626;
+        text-decoration: none;
+        padding: 8px 24px;
+        border-radius: 3px;
+        font-size: 20px;
+        transition: all .5s ease;
+        border: 1px solid white;
+    }
+
+    .post__btn a:hover {
+        background: transparent;
+    }
+
+    .view__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .view__btn a {
+        color: white;
+        background-color: #dc2626;
+        text-decoration: none;
+        padding: 8px 24px;
+        border-radius: 3px;
+        font-size: 20px;
+        transition: all .5s ease;
+        border: 1px solid white;
+    }
+
+    .view__btn a:hover {
+        background: transparent;
+    }
+
+    .post__area {
+        margin-bottom: 40px;
+    }
+
+</style>
 
 <div class="container">
-    <h1 style="color: white;">Post Listing</h1>
-    <div class="single__post">
-        <div class="post__img">
-            <img src="/images/post-img.jpg" alt="">
+    <h1 style="color: white; font-size: 3.2em;">Post Listing</h1>
+    <div class="post__area">
+        <div class="single__post">
+            <div class="post__img">
+                <img src="/images/post-img.jpg" alt="">
+            </div>
+            <div class="post__desc">
+                <h1>Ullamcorper Mollis Egestas Dapibus</h1>
+                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                
+                <div class="post__meta">
+                    <span>Mar 28, 2021</span>
+                    <span>3 min read</span>
+                </div>
+                <div class="post__btn">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="post__desc">
-            <h1>Some Name</h1>
+        <div class="single__post">
+            <div class="post__img">
+                <img src="/images/post-img.jpg" alt="">
+            </div>
+            <div class="post__desc">
+                <h1>Ullamcorper Mollis Egestas Dapibus</h1>
+                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                
+                <div class="post__meta">
+                    <span>Mar 28, 2021</span>
+                    <span>3 min read</span>
+                </div>
+                <div class="post__btn">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="single__post">
+            <div class="post__img">
+                <img src="/images/post-img.jpg" alt="">
+            </div>
+            <div class="post__desc">
+                <h1>Ullamcorper Mollis Egestas Dapibus</h1>
+                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                
+                <div class="post__meta">
+                    <span>Mar 28, 2021</span>
+                    <span>3 min read</span>
+                </div>
+                <div class="post__btn">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="single__post">
+            <div class="post__img">
+                <img src="/images/post-img.jpg" alt="">
+            </div>
+            <div class="post__desc">
+                <h1>Ullamcorper Mollis Egestas Dapibus</h1>
+                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                
+                <div class="post__meta">
+                    <span>Mar 28, 2021</span>
+                    <span>3 min read</span>
+                </div>
+                <div class="post__btn">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="single__post">
+            <div class="post__img">
+                <img src="/images/post-img.jpg" alt="">
+            </div>
+            <div class="post__desc">
+                <h1>Ullamcorper Mollis Egestas Dapibus</h1>
+                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.</p>
+                
+                <div class="post__meta">
+                    <span>Mar 28, 2021</span>
+                    <span>3 min read</span>
+                </div>
+                <div class="post__btn">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view__btn">
+            <a href="#">View All Post</a>
         </div>
     </div>
 </div>
