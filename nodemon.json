@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "pages",
+    "partials",
+    "."
+  ],
+  "ext": "ejs,js",
+  "exec": "node ./server.js",
+  "delay": 250
+}
