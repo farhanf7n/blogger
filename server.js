@@ -3,8 +3,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', './pages');
-app.use(express.static(__dirname + 'asset'));
-app.use(express.static('./asset/images'));
+app.use(express.static('asset'));
 
 app.get('/', function (request, response) {
     response.render("home");
