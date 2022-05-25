@@ -7,3 +7,23 @@
     margin: auto;
     width: 80%;
 }
+
+body {
+    background: #292A2D;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 3px;
+}
+
+.top-nav a:hover {
+    background-color: #dc2626;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
