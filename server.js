@@ -13,6 +13,10 @@ app.get('/home', function (request, response) {
     response.render("home");
 });
 
+app.get('/edit-post', function (request, response) {
+    response.render("edit-post");
+});
+
 app.get('/new-post', function (request, response) {
     response.render("new-post");
 });
