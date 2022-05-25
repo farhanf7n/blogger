@@ -1,6 +1,56 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navbar') %>
 
-<h1>New Post</h1>
+<style>
+.form__part input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form__part label {
+    color: white;
+    font-size: 28px;
+}
+
+.form__part {
+    margin-bottom: 30px;
+}
+
+.form__part button {
+    font-size: 18px;
+    padding: 17px 55px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .5s ease;
+    border: 1px solid white;
+    background: #dc2626;
+    cursor: pointer;
+}
+.form__part button:hover {
+    color: #dc2626;   
+    background-color: white;
+}
+</style>
+
+<div class="container">
+    <div class="form__part">
+        <h1 style="color: white; margin-bottom: 30px;">New Post Form</h1>
+        <form style="padding: 0px 210px;">
+            <input type="text" id="fname" name="fname" placeholder="Post Title">
+            <label for="avatar">Choose a Post Image:</label>
+            <input style="color: white;" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            <input type="text" id="fname" name="fname" placeholder="Post Title">
+            <textarea style="width: 100%; padding: 10px 15px; font-size: 25px; margin-bottom: 20px;" name="" id="" rows="10" placeholder="Enter Post Description Here"></textarea>
+            <input type="date" id="start" value="1996-02-21" min="2018-01-01" max="2018-12-31">
+            <input type="text" id="fname" name="fname" placeholder="Post Title">
+            <input type="number" id="ttr" name="time" placeholder="Time to read in Minutes">
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</div>
 
 <%- include('../partials/footer') %>
