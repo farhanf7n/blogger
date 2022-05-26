@@ -1,6 +1,60 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navbar') %>
 
-<h1>Register</h1>
+<style>
+    .reg__form input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .reg__form label {
+        color: white;
+        font-size: 28px;
+    }
+    
+    .reg__form {
+        margin-bottom: 30px;
+        margin-top: 131px;
+        border: 1px solid white;
+        padding: 28px;
+        border-radius: 10px;
+    }
+    
+    .reg__form button {
+        font-size: 18px;
+        padding: 17px 55px;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: all .5s ease;
+        border: 1px solid white;
+        background: #dc2626;
+        cursor: pointer;
+    }
+    .reg__form button:hover {
+        color: #dc2626;   
+        background-color: white;
+    }
+    </style>
+
+<div class="login__page">
+    <div class="container">
+        <div class="reg__form">
+            <h1 style="color: white; margin-bottom: 30px;">Register</h1>
+            
+            <form style="padding: 0px 210px;">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <input type="text" id="username" name="username" placeholder="Enter Desired Username">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter New Password">
+                <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter New Password Again">
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <%- include('../partials/footer') %>

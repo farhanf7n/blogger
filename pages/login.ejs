@@ -1,6 +1,57 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navbar') %>
 
-<h1>Login</h1>
+<style>
+    .login__form input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .login__form label {
+        color: white;
+        font-size: 28px;
+    }
+    
+    .login__form {
+        margin-bottom: 30px;
+        margin-top: 131px;
+        border: 1px solid white;
+        padding: 28px;
+        border-radius: 10px;
+    }
+    
+    .login__form button {
+        font-size: 18px;
+        padding: 17px 55px;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: all .5s ease;
+        border: 1px solid white;
+        background: #dc2626;
+        cursor: pointer;
+    }
+    .login__form button:hover {
+        color: #dc2626;   
+        background-color: white;
+    }
+    </style>
+
+<div class="login__page">
+    <div class="container">
+        <div class="login__form">
+            <h1 style="color: white; margin-bottom: 30px;">Login</h1>
+            
+            <form style="padding: 0px 210px;">
+                <input type="text" id="username" name="username" placeholder="Enter Your Username">
+                <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter Your Password">
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <%- include('../partials/footer') %>
