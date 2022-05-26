@@ -33,6 +33,10 @@ app.get('/register', function (request, response) {
     response.render('register');
 });
 
+app.get('/single-post', function (request, response) {
+    response.render('single-post');
+});
+
 app.listen(3000, function () {
     console.log("Server started at port 3000");
 })
